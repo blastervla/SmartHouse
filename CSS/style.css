@@ -1,0 +1,377 @@
+@font-face {
+	font-family: Franklin Gothic Heavy;
+	src: url(fuente.ttf) format(‘truetype’);
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #fff;
+	font-family: "Franklin gothic heavy", Arial, Helvetica, Verdana;
+	font-size: 14px;
+	line-height: 22px;
+	color: #666;
+	position: relative;
+	margin-top: -20px;
+	-webkit-text-size-adjust: none;
+	text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+
+h1{
+	font-size: 22px;
+}
+
+h2, h3 {
+	font-size: 18px;
+}
+
+h4, h5, h6 {
+	font-size: 16px;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+a, a:link, a:active, a:visited, a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav:not(.mm-menu) {
+	display: none;
+}
+
+button{
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.DivReceta {
+    margin-bottom: 60px;
+}
+
+.inputForm, .selectForm, .selectFormAgregado, .buttonForm, .buttonFormSearch{
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+}
+
+.inputForm {
+	width: 260px;
+	border-radius: 4px;
+}
+
+.selectForm {
+	width: 220px;
+	border-radius: 4px 0 0 4px;
+}
+
+.selectFormAgregado{
+	width: 260px;
+	border-radius: 4px;
+}
+
+.buttonForm{
+	border-radius: 0 4px 4px 0;
+}
+
+.buttonFormSearch{
+	border-radius: 4px;
+}
+
+.content, .footer {
+	text-align: center;
+}
+
+.header, .footer {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	/*Antes el height estaba en 40. Me parece que más grande está mejor. Sino es muy chico...*/
+	padding: 0 50px;
+}
+
+.header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#head {
+  background: #4F4F4F;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 0px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  width: 100%;
+  height: 50px;
+  /*Antes el height estaba en 40. Me parece que más grande está mejor. Sino es muy chico...*/
+  padding: 0 50px;
+}
+
+.footer.fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#navToggle {
+	background: center center no-repeat transparent;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+.content {
+	padding: 150px 50px 50px 50px;
+}
+
+img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+#navToggle {
+	height: 50px;
+	width: 50px;
+}
+
+#container {
+	margin-left:4%;
+	margin-right:4%;
+}
+
+#container img {
+	width:100%;
+/*	height:100%; */
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+td, th { 
+  padding: 6px; 
+}
+
+.itemImg {
+    max-width: 3000px;
+    max-height: 2000px;
+}
+
+
+@media screen and (min-width: 800px){
+    .itemA {
+    	width: 49% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 49% !important;
+    	display: inline !important;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 250px) and (orientation:portrait) {
+    .itemA {
+    	width: 49% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 49% !important;
+    	display: inline !important;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 250px) and (orientation:landscape) {
+    .itemA {
+    	width: 49% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 49% !important;
+    	display: inline !important;
+    }
+}
+
+@media screen and (max-width: 249px){
+    .itemA {
+    	width: 99% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 99% !important;
+    	display: inline !important;
+    }
+}
+
+.menuNav a{
+	text-decoration: none;
+  font-size: 18px; 
+}
+
+
+.LogButtons {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  text-shadow: 3px 1px 6px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: rgba(0, 192, 192, 0);
+  border: solid #71FFA3 3px;
+  text-decoration: none;
+  position: relative;
+  top: -21px;
+  left: 10px;
+  text-align: right;
+}
+
+.LogButtons:hover {
+  cursor: pointer;
+}
+
+#btnSignIn {
+  padding: 6px 16px 6px 16px;
+}
+
+#btnSignUp, #btnRegister {
+  padding: 6px 13px 6px 13px;
+}
+
+.PopupDialog {
+  border-radius: 25px;
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  background-color: #CECECE;
+  width: 450;
+  height: 325;
+}
+
+.RegisterButtons {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 15px;
+  text-shadow: 3px 1px 6px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 24px;
+  background: #09D041;
+  text-decoration: none;
+  position: relative;
+  text-align: right;
+}
+
+.RegisterButtons:hover {
+  cursor: pointer;
+}
+
+.PopupDialog input {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  font-size: 26px;
+  border-color: #AAAAAA;
+  box-shadow: none;
+  border-style: solid;
+}
+
+.PopupDialog tr, td {
+  white-space: nowrap;
+}
+
+/*.LogButtons:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}*/
+
+/*
+@media screen and (min-width: 800px){
+    .itemA {
+    	width: 33% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 33% !important;
+    	display: inline !important;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 250px) and (orientation:portrait) {
+    .itemA {
+    	width: 49% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 49% !important;
+    	display: inline !important;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 250px) and (orientation:landscape) {
+    .itemA {
+    	width: 33% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 33% !important;
+    	display: inline !important;
+    }
+}
+
+@media screen and (max-width: 249px){
+    .itemA {
+    	width: 99% !important;
+    	text-decoration: none !important;
+    }
+    
+    .itemImg {
+    	width: 99% !important;
+    	display: inline !important;
+    }
+}
+*/
