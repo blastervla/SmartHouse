@@ -43,7 +43,7 @@ p {
 	margin: 0 0 10px 0;
 }
 
-a, a:link, a:active, a:visited, a:hover {
+a, a:link, a:active, a:visited, a:hover:not(.RegisterButtons) {
 	color: inherit;
 	text-decoration: none;
 }
@@ -275,15 +275,6 @@ td, th {
   padding: 6px 13px 6px 13px;
 }
 
-.PopupDialog {
-  border-radius: 25px;
-  -webkit-border-radius: 25;
-  -moz-border-radius: 25;
-  background-color: #CECECE;
-  width: 450;
-  height: 325;
-}
-
 .RegisterButtons {
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
@@ -300,20 +291,68 @@ td, th {
 
 .RegisterButtons:hover {
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.PopupDialog {
+  border-radius: 25px;
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  background-color: #CECECE;
+  width: 450;
+  height: 325;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  position: absolute;
+  left: 33%;
+  top: 25%;
 }
 
 .PopupDialog input {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  font-size: 26px;
+  font-size: 18px;
   border-color: #AAAAAA;
   box-shadow: none;
   border-style: solid;
+  height: 40px;
+  text-indent: 10px;
 }
 
 .PopupDialog tr, td {
   white-space: nowrap;
+}
+
+.Filler {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+::-webkit-input-placeholder {
+  text-indent: 10px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-indent: 10px;
+}
+:-ms-input-placeholder {
+  text-indent: 10px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-indent: 10px;
+}
+
+.IncompleteField {
+  border-color: red;
+}
+
+.imgPrueba {
+  position:absolute;
+  right:5px;
+  top:4px;
 }
 
 /*.LogButtons:hover {

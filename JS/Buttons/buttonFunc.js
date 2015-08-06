@@ -19,7 +19,7 @@ $(document).ready(function (){
 	$("#btnSignUp").mouseover(function (){
 
 		$("#btnSignUp").stop().animate({
-			'background-color': 'rgba(0, 192, 192, 1)'
+			'background-color': 'rgba(8, 175, 55, 1)'
 		}, 100);
 
 	});
@@ -32,11 +32,16 @@ $(document).ready(function (){
 
 	});
 
+	$("#btnRegister").mouseover(function (){
+		$("#btnRegister").stop().animate({
+			'background-color': 'rgba(8, 175, 55, 1)'
+		}, 100);
+	});
 
-	$("#btnSignIn").click(function (){
-
-		
-
+	$("#btnRegister").mouseleave(function (){
+		$("#btnRegister").stop().animate({
+			'background-color': 'rgba(9, 208, 65, 1)'
+		}, 100);
 	});
 
 

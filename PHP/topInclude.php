@@ -16,6 +16,7 @@
       <script src="../JS/Menu/jquery.mmenu.min.all.js" type="text/javascript"></script>
       <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
       <script type="text/javascript" src="../JS/Buttons/buttonFunc.js"></script>
+      <script type="text/javascript" src="../JS/Buttons/register.js"></script>
 
    </head>
    <body>
@@ -53,33 +54,3 @@
 
       <!-- The page -->
       <div class="page">
-         <div class="content">
-            <p><strong>This is a demo.</strong><br />
-               Click the menu icon to open the menu.</p>
-         </div>
-         <div class = "PopupDialog" id = "registerDiv">
-            <form action = "register.php" method = "GET">
-               <table width = "100%" height = "100%" align = "center" border = 1>
-                  <tr><td></td></tr>
-                  <tr height = "40">
-                     <td><center><input type = "text" name = "name" style="width: 200px;"></center></td>
-                     <td><center><input type = "text" name = "surname" style="width: 200px;"></td>
-                  </tr>
-                  <tr height = "40">
-                     <td colspan = "2" align = "center"><center><input type = "text" name = "mail" style="width: 428px;"></center></td>
-                  </tr>
-                  <tr height = "40">
-                     <td colspan = "2" align = "center"><center><input type = "text" name = "confirmMail" style="width: 428px;"></center></td>
-                  </tr>
-                  <tr height = "40">
-                     <td colspan = "2" align = "center"><center><input type = "text" name = "pass" style="width: 428px;"></center></td>
-                  </tr>
-                  <tr height = "40">
-                     <td colspan = "2" align = "center"><center><input type = "text" name = "confirmPass" style="width: 428px;"></center></td>
-                  </tr>
-                  <tr>
-                     <td colspan = "2" align = "center"><center><a class = "RegisterButtons" id = "btnRegister">Sign Up!</a></center></td>
-                  </tr>
-               </table>
-            </form>
-         </div>
